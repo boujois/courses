@@ -46,8 +46,22 @@ Add the aliases:
 
 ##Create an Instance
 
+Run the following command from the `setup` directory to start a new instance (this will take a minute or so):
+
     $ bash setup_p2.sh
+
+You should now see the instance within the AWS Console ([https://console.aws.amazon.com](https://console.aws.amazon.com)):
+
+![aws_instance_running](documentation_images/running_instance.png)  
+
+__Note: Make sure you stop the instance when not in use, as the cost is $0.90 per hour__
+
+By running `setup_p2.sh` you will now have 2 new files in your setup directory, `fast-ai-commands.txt` and `fast-ai-remove.sh`. `fast-ai-commands.txt` contains a handy list of commands specifically for your instance. `fast-ai-remove.sh` is used to terminate your instance.
+
+
 
 ##Destroy the Instance (in case you need to)
 
     $ bash fast-ai-remove.sh
+
+If this does not work, simply login to the AWS console, right click on the EC2 Instance, select: Instance State > Terminate.
