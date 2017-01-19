@@ -24,6 +24,8 @@ Configure AWS CLI with your Access Key, Secret Access Key & Region preference:
 
     $ aws configure
 
+When prompted for default region type `us-east-1` and for default output format type `text`.
+
 ##Anaconda (Python)
 
 Download Anaconda from [here](https://www.continuum.io/downloads). Make sure you pick the Python 2.7 Installer.
