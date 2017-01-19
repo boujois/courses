@@ -24,7 +24,7 @@ Configure AWS CLI with your Access Key, Secret Access Key & Region preference:
 
     $ aws configure
 
-When prompted for default region type `us-east-1` and for default output format type `text`.
+When prompted for default region type `us-east-1` and for default output format type `text`. If you do not have an Access Key and Secret Access key, follow the instructions [here](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey).
 
 ##Anaconda (Python)
 
@@ -60,7 +60,40 @@ __Note: Make sure you stop the instance when not in use, as the cost is $0.90 pe
 
 By running `setup_p2.sh` you will now have 2 new files in your setup directory, `fast-ai-commands.txt` and `fast-ai-remove.sh`. `fast-ai-commands.txt` contains a handy list of commands specifically for your instance. `fast-ai-remove.sh` is used to terminate your instance.
 
+##Connect to your instance
 
+    $ aws-ip
+    $ aws-ssh
+
+When prompted to confirm authenticty, type `yes`.
+
+##Perform Updates
+
+It's always a good idea to perform regular updates on any server. Since this instance is built from an AMI (Amazon Machine Image) the software will always be slightly out of date. Upon login you will see a message like this:
+
+    174 packages can be updated.
+    88 updates are security updates.
+
+To update your server run:
+
+    $ sudo apt-get update
+    $ sudo apt-get upgrade
+
+The `upgrade` command will take a few minutes to run.
+
+If you run into an error saying `E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)` (as I did with the current AMI), run:
+
+    $ sudo rm /var/lib/apt/lists/lock
+    $ sudo rm /var/cache/apt/archives/lock
+    $ sudo rm /var/lib/dpkg/lock
+    $ sudo dpkg --configure -a
+
+Then try again with:
+
+    $ sudo apt-get update
+    $ sudo apt-get upgrade
+
+Hit enter when asked if you want to continue.
 
 ##Destroy the Instance (in case you need to)
 
