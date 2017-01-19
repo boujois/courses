@@ -69,7 +69,7 @@ When prompted to confirm authenticty, type `yes`.
 
 ##Perform Updates
 
-It's always a good idea to perform regular updates on any server. Since this instance is built from an AMI (Amazon Machine Image) the software will always be slightly out of date. Upon login you will see a message like this:
+It's always a good idea to perform regular updates on any server. Since this instance is built from an AMI (Amazon Machine Image) the software (and security updates) will always be slightly out of date. Upon login you will see a message like this:
 
     174 packages can be updated.
     88 updates are security updates.
