@@ -167,6 +167,12 @@ You should see something like this:
     |  No running processes found                                                 |
     +-----------------------------------------------------------------------------+
 
+##Install required software
+
+You need to install some additional software on the instance, run:
+
+    $ sudo apt-get install unzip
+
 ##Start Jupyter Notebook
 
 Jupyter Notebook is the application used to run
