@@ -173,6 +173,25 @@ You need to install some additional software on the instance, run:
 
     $ sudo apt-get install unzip
 
+##Clone the repository
+
+There are handy files within the repository, such as the notebooks, so cloning this onto the server is a good idea. Run:
+
+    $ mkdir ~/GitHub
+    $ cd ~/GitHub
+    $ git clone https://github.com/fastai/courses.git fastai_courses
+
+This will clone the repository into a folder in your home directory name `GitHub/fastai_courses`.
+
+If there have been any updates to the repository, navigate into the folder and pull the updates:
+
+    $ cd ~/GitHub/fastai_courses
+    $ git pull
+
+If there haven't been any updates, you will see the message:
+
+    Already up-to-date.
+
 ##Start Jupyter Notebook
 
 Jupyter Notebook is the application used to run
