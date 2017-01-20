@@ -199,6 +199,8 @@ Connect to Jupyter Notebook in your browser by pasting the IP address of the ins
 
 You should see a password prompt. Enter `dl_courses` and click `Log In`.
 
+You can stop Jupyter Notebook from running my pressing `Ctrl` + `C`, then `Y` and `Enter`  when prompted to confirm.
+
 ##Stop the Instance (to save money)
 
 You should __always__ stop the instance after use to avoid large costs accruing within your AWS account. Use the following command to stop your instance:
