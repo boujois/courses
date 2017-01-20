@@ -224,7 +224,13 @@ You can stop Jupyter Notebook from running my pressing `Ctrl` + `C`, then `Y` an
 
 ##Stop the Instance (to save money)
 
-You should __always__ stop the instance after use to avoid large costs accruing within your AWS account. Use the following command to stop your instance:
+You should __always__ stop the instance after use to avoid large costs accruing within your AWS account.
+
+If you are currently logged into your instance, you can logut using:
+
+    $ exit
+
+Then use the following command (from your own machine) to stop your instance:
 
     $ aws-stop
 
