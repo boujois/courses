@@ -165,7 +165,7 @@ Connect to Jupyter Notebook in your browser by pasting the IP address of the ins
 
     http://xx.197.204.xx:8888/
 
-You should see a password prompt. Enter `dl_courses` and click `Log In`    
+You should see a password prompt. Enter `dl_courses` and click `Log In`.
 
 ##Stop the Instance (to save money)
 
