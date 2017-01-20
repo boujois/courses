@@ -165,6 +165,8 @@ Connect to Jupyter Notebook in your browser by pasting the IP address of the ins
 
     http://xx.197.204.xx:8888/
 
+You should see a password prompt. Enter `dl_courses` and click `Log In`    
+
 ##Stop the Instance (to save money)
 
 You should always stop the instance after use to avoid large costs accruing within your AWS account. Use the following command to stop your instance:
