@@ -1,5 +1,9 @@
 #Getting Started
 
+## Video Tutorial
+
+The video tutorial from fast.ai is available [here](http://course.fast.ai/lessons/aws.html).
+
 ##AWS CLI
 
 Install Amazon AWS CLI tool. See full instructions [here](http://docs.aws.amazon.com/cli/latest/userguide/installing.html).

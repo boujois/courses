@@ -5,3 +5,4 @@ These are the lecture materials from [Practical Deep Learning for Coders](http:/
 ##Resources
 
 * [Getting Started Guide](getting_started.md)
+* [Lesson 1](lesson_guides/lesson_01.md)
