@@ -50,6 +50,28 @@ Add the aliases:
 
     $ source aws-alias.sh
 
+Optionally, if you want to have this auto load, and not have to run each time you open a new terminal, first determine your current path (make sure you are currently in the `setup` folder):
+
+    $ pwd
+
+This will output the full path to your `setup` folder, example:
+
+    /Users/xxxx/GitHub/courses/setup
+
+For Windows/linux edit `~/.bashrc`, for OSX edit `~/.bash_profile`  :    
+
+    $ nano .~/bashrc
+
+    or
+
+    $ nano .~/bash_profile
+
+then add a line at the bottom, including the output from `pwd` above, example:
+
+    source /Users/xxxx/GitHub/courses/setup/aws-alias.sh
+
+Reload your terminal (quit and re-open), and you should find the aliases work without having to run source again.    
+
 ##Create an Instance
 
 Run the following command from the `setup` directory to start a new instance (this will take a minute or so):
