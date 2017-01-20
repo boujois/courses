@@ -194,9 +194,11 @@ If there haven't been any updates, you will see the message:
 
 ##Start Jupyter Notebook
 
-Jupyter Notebook is the application used to run
+Jupyter Notebook is the application used to run our deep learning scripts. To start it up run:
 
-    $ jupyter notebook
+    $ jupyter notebook ~/
+
+The last part (`~/`) ensures that the root directory for juypter notebooks is our home directory.
 
 You should see (after a few seconds) an output like this:
 
