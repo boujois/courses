@@ -5,6 +5,17 @@
 export name="fast-ai"
 export cidr="0.0.0.0/0"
 
+hash aws 2>/dev/null
+if [ $? -ne 0 ]; then
+    echo >&2 "'aws' command line tool required, but not installed.  Aborting."
+    exit 1
+fi
+
+if [ -z "$(aws configure get aws_access_key_id)" ]; then
+    echo "AWS credentials not configured.  Aborting"
+    exit 1
+fi
+
 # get the correct ami
 export region=`aws configure get region`
 if [ $region = "us-west-2" ]; then 
@@ -75,7 +86,7 @@ echo \# Stop your instance: : >> $name-commands.txt
 echo aws ec2 stop-instances --instance-ids $instanceId  >> $name-commands.txt
 echo \# Start your instance: >> $name-commands.txt 
 echo aws ec2 start-instances --instance-ids $instanceId  >> $name-commands.txt
-echo Reboot your instance: >> $name-commands.txt 
+echo \# Reboot your instance: >> $name-commands.txt
 echo aws ec2 reboot-instances --instance-ids $instanceId  >> $name-commands.txt
 echo "" 
 # export vars to be sure
